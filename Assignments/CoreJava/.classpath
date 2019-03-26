@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="EmployeeManagementApp01/src"/>
+	<classpathentry kind="src" path="EmployeeManagementApp02/src"/>
+	<classpathentry kind="src" path="EmployeeManager01/src"/>
+	<classpathentry kind="src" path="EmployeeManager02/EmployeeCRUDoperations/src"/>
+	<classpathentry kind="src" path="EmployeeManager03/src"/>
+	<classpathentry kind="src" path="EmployeeOOPS/src"/>
+	<classpathentry kind="src" path="EvenOddNumbers/src"/>
+	<classpathentry kind="src" path="LambdaCalculator/src"/>
+	<classpathentry kind="src" path="PrimeNumbers/LambdaCalculator/src"/>
+	<classpathentry kind="src" path="PrimeNumbers/src"/>
+	<classpathentry kind="src" path="SwapNumbers/src"/>
+	<classpathentry kind="output" path="EmployeeManager02/EmployeeCRUDoperations/bin"/>
+</classpath>
