@@ -1,22 +1,6 @@
 package com.java.employeemanagement;
 
-import java.util.concurrent.atomic.AtomicInteger;
-	import java.util.stream.Collectors;
-	import java.io.BufferedReader;
-	import java.io.BufferedWriter;
-	import java.io.File;
-	import java.io.FileInputStream;
-	import java.io.FileOutputStream;
-	import java.io.FileWriter;
-	import java.io.IOException;
-	import java.io.InputStreamReader;
-	import java.io.ObjectInputStream;
-	import java.io.ObjectOutputStream;
-	import java.time.Instant;
-	import java.time.LocalDate;
-	import java.time.LocalDateTime;
-	import java.time.Month;
-	import java.util.*;
+import java.util.*;
 
 public class Employee {
 
@@ -28,21 +12,19 @@ public class Employee {
 	private String department;
 	private String country;
 
-	public Employee( String empName, String gender, int age, String designation, String department,
-			 String country) {
+	public Employee(String empName, String gender, int age, String designation, String department, String country) {
 
-	
 		this.empName = empName;
 		this.gender = gender;
 		this.age = age;
 		this.designation = designation;
 		this.department = department;
-     	this.country = country;
-	
+		this.country = country;
+
 	}
 
-	public Employee( int empId,String empName, String gender, int age, String designation, String department,
-			 String country) {
+	public Employee(int empId, String empName, String gender, int age, String designation, String department,
+			String country) {
 
 		this.empId = empId;
 		this.empName = empName;
@@ -50,13 +32,13 @@ public class Employee {
 		this.age = age;
 		this.designation = designation;
 		this.department = department;
-     	this.country = country;
-	
+		this.country = country;
+
 	}
 
 	public Employee() {
 		// TODO Auto-generated constructor stub
-		this.empId=0;
+		this.empId = 0;
 	}
 
 	// employee setters and getters
@@ -112,10 +94,4 @@ public class Employee {
 		this.country = country;
 	}
 
-
-	
-
 }
-
-
-
