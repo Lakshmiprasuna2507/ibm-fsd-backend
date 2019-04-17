@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- local date -->
+	<bean id="date" class="java.time.LocalDate" factory-method="parse">
+		<constructor-arg index="0" value="1997-07-25"></constructor-arg>
+	</bean>
+
+	<bean id="Address" class="SpringXMLEmployee.Address">
+		<property name="city" value="Bangalore" />
+		<property name="country" value="India" />
+		<property name="pin" value="560045" />
+	</bean>
+	<!-- autowiring with address constructor -->
+	<bean id="employee" class="SpringXMLEmployee.Employee"
+		autowire="constructor">
+		<constructor-arg name="id" value="101" />
+		<constructor-arg name="name" value="Lakshmi" />
+		<!-- <constructor-arg name="address" ref="Address"/> -->
+		<property name="designation" value="cse" />
+		<property name="salary" value="56000" />
+		<property name="dob" ref="date"></property>
+		<property name="address" ref="Address"></property>
+		<property name="skills">
+			<list>
+				<value>JAVA</value>
+				<value>SPRINGS</value>
+				<value>UI</value>
+			</list>
+
+		</property>
+	</bean>
+
+
+
+
+
+
+</beans>
